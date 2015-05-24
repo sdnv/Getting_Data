@@ -1,5 +1,5 @@
 ## COURSERA/JHU Data Science Specialization
-## Getting and Cleaning Data, May 2015  -  Course Project
+## Getting and Cleaning Data (May 2015) - Course Project
 
 # Readme
 
@@ -8,17 +8,12 @@
 This repository contains the following:
 
  - **README.md**		(this file)
-
  - Folder **"/UCI HAR Dataset"**(raw data files)
-
  - **CodeBook.md**		(datasets and variables description)
-
  - **run_analysis.R**		(master script file)
  - **train_test_datasets.R**	(auxiliary script file)
-
  - **descriptive_names.txt**	(additional user-defined input file)
  - **Final_Dataset.txt**	(output file)
-
  - **F1_Dataset.png**		(figure 1)
  - **F2_DatasetMeanStd.png**	(figure 2)
  - **F3_DatasetAveraged.png**	(figure 3)
@@ -65,6 +60,7 @@ Finally, **DatasetAveraged** is written to a text file **Final_Dataset.txt** usi
 ```r
 FinalDataset <- read.table("Final_Dataset.txt", sep="\t", header=TRUE)
 head(FinalDataset)
+str(FinalDataset)
 ```
 
 ### 4. Remarks
@@ -76,7 +72,7 @@ The code book of the project was carefully written to provided detailed informat
 It's important to take in mind that the resulting tidy datasets reflect the personal understanding of the programmer about the project instructions. Different users will certainly build different tidy datasets with essentially the same content variables, but all those datasets must meet the requirement of being tidy.
 
 
-### 5. Annexes: Structure of the Main Datasets
+### 5. Annexes: Structure of the Datasets
 
 
 

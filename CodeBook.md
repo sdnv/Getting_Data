@@ -1,5 +1,5 @@
 ## COURSERA/JHU Data Science Specialization
-## Getting and Cleaning Data, May 2015  -  Course Project
+## Getting and Cleaning Data (May 2015) - Course Project
 
 # Code Book
 
@@ -14,7 +14,7 @@ The data files used in this project are located in the folder **"/UCI HAR Datase
 
 #### 2.1. Files in folder "/UCI HAR Dataset":
 
-  - **activvity_labels.txt**: contains the activity identification numbers along with their respective activity names.
+  - **activity_labels.txt**: contains the activity identification numbers along with their respective activity names.
 
   - **features.txt**: identifies the 561 feature variables about the activities. For example, feature 10 is the *maximum body acceleration over time in the X direction*.
 
@@ -65,7 +65,7 @@ The following transformations were made in each step:
 
   - In Step 4: The "name" attribute of **DatasetMeanStd** is transformed (replaced) by the descriptive variable names read from file **descriptive_names.txt**.
 
-  - In Step 5: The variable "TrainTest" is excluded since it is meaningless for averaged variable values. The variable values are transformed into average values for each Subject and each Activity by aggregation, using the function **aggregate()**.
+  - In Step 5: The variable "TrainTest" is excluded since it is meaningless for averaged variable values computed with both Train and Test observations. The variable values are transformed into average values for each Subject and each Activity by aggregation, using the function **aggregate()**.
 
 
 ### 5. Information about the Variables
@@ -115,7 +115,7 @@ The data used in this project relates to **Human Activity Recognition (HAR)** al
   - http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/
 
 
-### 7. Annexes: Structure of the Main Datasets
+### 7. Annexes: Structure of the Datasets
 
 
 
